@@ -1,5 +1,4 @@
 <?php require "header.php"; ?>
-  
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -148,7 +147,7 @@
 	              </div>
 	              <div class="card-body">
 	                <div class="chart">
-	                  <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+	                  <!-- <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas> -->
 	                </div>
 	              </div>
 	              <!-- /.card-body -->
@@ -161,13 +160,34 @@
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
     <!-- /.content -->
   </div>
 
 <?php require "footer.php"; ?>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="printThis">
+        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+        <p>Gần 100 cảnh sát đặc nhiệm, cảnh sát cơ động... bất ngờ vây ráp chợ công nhân tại Khu công nghiệp Thạnh Phú, huyện Vĩnh Cửu. Khi thấy Loan cùng đàn em vào cửa hàng sữa cưỡng đoạt tiền, các mũi trinh sát ập vào bắt giữ. Chúng chống trả, tháo chạy tán loạn, tuy nhiên 9 người đã bị khống chế, trong đó có hai nữ là Loan và Hoàng Thị Tuyết Nhung (35 tuổi, ở Biên Hòa).</p>
+        <p>Gần 100 cảnh sát đặc nhiệm, cảnh sát cơ động... bất ngờ vây ráp chợ công nhân tại Khu công nghiệp Thạnh Phú, huyện Vĩnh Cửu. Khi thấy Loan cùng đàn em vào cửa hàng sữa cưỡng đoạt tiền, các mũi trinh sát ập vào bắt giữ. Chúng chống trả, tháo chạy tán loạn, tuy nhiên 9 người đã bị khống chế, trong đó có hai nữ là Loan và Hoàng Thị Tuyết Nhung (35 tuổi, ở Biên Hòa).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="btnPrint" type="button" class="btn btn-default" onclick="window.print()">Print</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Js page -->
 <script src="dist/js/page/dashboard.js"></script>
 <script src="dist/js/page/chart-chi-phi.js"></script>
-
 </body>
 </html>

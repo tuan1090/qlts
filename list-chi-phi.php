@@ -1,4 +1,20 @@
 <?php require "header.php"; ?>
+<style type="text/css">
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printThis, #printThis * {
+        visibility: visible;
+      }
+      #printThis {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    
+  </style>
 	<!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -50,13 +66,13 @@
               <div class="card-header">
                 <h3 class="card-title">Danh sách chi phí hàng tháng</h3>
                 <div class="card-tools">
-                    <button type="submit" class="btn btn-danger btn-sm ml-2" data-toggle="modal" data-target="#modal_add_phong_ban">
+                    <button type="submit" class="btn btn-danger btn-sm ml-2" data-toggle="modal" data-target="#modal_add_phong_ban" onclick="window.print()">
                       <i class="fas fa-file-import pr-2"></i> In báo cáo
                     </button>
                 </div>
               </div>
               <!-- /.card-header -->
-              <div class="card-body">
+              <div class="card-body" id="printThis">
                 <div class="row">
                   <div class="col-md-12">
                     <!-- BAR CHART -->

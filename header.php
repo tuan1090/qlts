@@ -176,13 +176,58 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
           <div class="dropdown-divider"></div>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item has-treeview">
+            <a href="list-chi-phi.php" class="nav-link">
               <i class="nav-icon fas fa-chart-bar"></i>
               <p>
                Báo cáo - thống kê
+               <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="list-chi-phi.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tổng chi phí</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="list-chi-phi-van-hanh.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí vận hành</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí mua sắm tài sản mới</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí sửa chữa tài sản</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí xây dựng văn phòng</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí theo đầu nhân sự</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chi phí theo m2 sàn</p>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
